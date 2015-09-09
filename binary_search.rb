@@ -2,7 +2,7 @@
 class Array
 
     def binary_search?(target)
-       lo = 0; hi = self.length
+       self = self.sort;lo = 0; hi = self.length
        while lo < hi
           mid = lo + (hi-lo)/2
           if self[mid] == target
@@ -19,3 +19,4 @@ class Array
 end
 
 p [1,2,3].binary_search?(4)
+p [1,2,3].binary_search?(1)
