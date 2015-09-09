@@ -1,9 +1,8 @@
 
 
-
 def my_flatten(value)
    flattened = []
-   flattener([1,2,3,4,[5,6,7,[8,9,[10]]]], flattened)
+   flattener(value, flattened)
    flattened
 end
 
